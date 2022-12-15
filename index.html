@@ -38,8 +38,8 @@
 				<hr>
 
 				<h3 class="text-center">Template settings</h3>
-				<button id="defaultTemplateBtn" class="btn btn-block btn-primary" onclick="template('default');">Use official AVV template</button>
-				<button id="customTemplateBtn" class="btn btn-block btn-default" onclick="template('custom');">Use custom template</button>
+				<!-- <button id="defaultTemplateBtn" class="btn btn-block btn-primary" onclick="template('default');">Use official AVV template</button>
+				<button id="customTemplateBtn" class="btn btn-block btn-default" onclick="template('custom');">Use custom template</button> -->
 				
 				<button id="defaultTemplateBtn" class="btn btn-primary btn-lg btn-block active" aria-pressed="true" onclick="template('default');">Use official AVV template</button>
 				<button id="customTemplateBtn" class="btn btn-default btn-lg btn-block active" aria-pressed="true" onclick="template('custom');">Use custom template</button>
@@ -439,7 +439,7 @@
 				</div>
 
 
-				<div class="section" id="sectionExperience">
+				<div class="section" id="sectionAchievements">
 					<div class="section-title ruled rule-above">
 						<hr class="hr-above">
 						<h4><strong>Achievements, Scholarships, Honors, Contribution, etc.:</strong></h4>
@@ -483,7 +483,7 @@
 
 
 
-				<div class="section" id="sectionAchievements">
+				<div class="section" id="sectionExperience">
 					<div class="section-title ruled rule-above">
 						<hr class="hr-above">
 						<h4><strong>Personal Details</strong></h4>
@@ -536,27 +536,6 @@
 						</ul>
 				</div>
 
-
-				
-				<div class="section" id="sectionInterest">
-					<div class="section-title ruled rule-above">
-						<hr class="hr-above">
-						<h4><strong>Fields of interest (OR Research interests)</strong></h4>
-						<hr class="hr-below">
-					</div>
-					<ul>
-					<div class="row">
-						<div class="col-sm-6">
-							<li>Advanced XYZ</li>
-							<li>ABC design</li>
-						</div>
-						<div class="col-sm-6">
-							<li>XYZ processing</li>
-							<li>Robotics</li>
-						</div>
-					</div>
-					</ul>
-				</div>
 				
 				<div class="section" id="sectionFooterMessage">
 					<div class="section-title ruled rule-above">
@@ -625,14 +604,17 @@
 			<div class="modal-body">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
 				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionResponsibility">Objective</label></div>
-				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionEducation">Education</label></div>
-				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionExperience">Experience</label></div>
-				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionPublications">Publications</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionEducation">Education</label></div>	
 				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionProjects">Projects</label></div>
-				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionCourses">Key courses taken</label></div>
-				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionSkills">Technical Skills</label></div>
-				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionAchievements">Achievements</label></div>
-				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionCurricular">Extra curriculars</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionCourses">Areas of Technical Interest</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionSkills">Other Technical Qualification</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionAchievements">Achievements, Scholarships, Honors, Contribution, etc.</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionCurricular">Extracurriculars</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionExperience">Personal Details</label></div>
+				<!-- <div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionPublications">Publications</label></div> -->
+				
+				
+				
 				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" value="sectionFooterMessage">References message</label></div>
 			</div>
 		</div>
