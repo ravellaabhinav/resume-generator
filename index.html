@@ -4,13 +4,13 @@
 	<title>haveloc</title>
 	<link rel="icon" type="image/png" href="images/haveloc-favicon.png"/>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/scroll.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/column_scroll.css">
 	<link rel="stylesheet" type="text/css" href="css/thin_scroll.css">
 	<link rel="stylesheet" type="text/css" href="css/theme.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="description" content="Online document editor like interface to create and save Resume">
 	<meta name="keywords" content="resume,cv,maker,creator,generator,avv,amrita.edu,haveloc,Amrita">
 </head>
@@ -21,35 +21,24 @@
 
 	<div class="row">
 
-
 		<div class="col-sm-3 no-print" id="left">
-
 			<div id="panel">
-
+				
 				<div id="notice">
 					<img src="images/name.png" class="img-responsive" alt="haveloc logo">
 					<a>version 1.0.0</a>
 				</div>
 
-				<!-- <button class="btn btn-block btn-primary" data-toggle="modal" data-target="#usageModal">VIEW INSTRUCTIONS</button> -->
 				<button class="btn btn-block btn-primary" data-toggle="modal" data-target="#">VIEW INSTRUCTIONS</button>
 				<button class="btn btn-block btn-success" onclick="window.print()">PRINT AS PDF</button>
 
 				<hr>
 
-				<h3 class="text-center">Template settings</h3>
-				<!-- <button id="defaultTemplateBtn" class="btn btn-block btn-primary" onclick="template('default');">Use official AVV template</button>
-				<button id="customTemplateBtn" class="btn btn-block btn-default" onclick="template('custom');">Use custom template</button> -->
+				<h3 class="text-center"><i class="fa fa-gear fa-spin" style="font-size:24px;color:red"></i> Settings</h3>
 				
 				<button id="defaultTemplateBtn" class="btn btn-primary btn-lg btn-block active" aria-pressed="true" onclick="template('default');">Use official AVV template</button>
 				<button id="customTemplateBtn" class="btn btn-default btn-lg btn-block active" aria-pressed="true" onclick="template('custom');">Use custom template</button>
-				<!-- <h5>
-					Minor
-					<div class="toggle-button">
-						<div class="toggle-option" data-toggle="minor" id="minorShow">Show</div>
-						<div class="toggle-option selected" data-toggle="minor" id="minorHide">Hide</div>
-					</div>
-				</h5> -->
+				
 				<h5>
 					<span style="color:black">Contact lines</span>
 					<div class="toggle-button">
@@ -59,7 +48,6 @@
 					</div>
 				</h5>
 				<h5>
-					
 					<span style="color:black">Horizontal margin</span>
 					<div class="toggle-button">
 						<div class="toggle-option" data-toggle="margin" id="margin1">1</div>
@@ -71,7 +59,6 @@
 					</div>
 				</h5>
 				<h5>
-					
 					<span style="color:black">Line spacing</span>
 					<div class="toggle-button">
 						<div class="toggle-option" data-toggle="line" id="line1">1</div>
@@ -83,7 +70,6 @@
 					</div>
 				</h5>
 				<h5>
-					
 					<span style="color:black">Center column no.</span>
 					<div class="toggle-button">
 						<div class="toggle-option multi-select" data-toggle="column" id="column1">1</div>
@@ -97,7 +83,6 @@
 				
 				<div id="customTemplateOptions">
 					<h5>
-						
 						<span style="color:black">Font type</span>
 						<div class="toggle-button">
 							<div class="toggle-option" data-toggle="font" id="fontVerdanaSans">1</div>
@@ -107,7 +92,6 @@
 						</div>
 					</h5>
 					<h5>
-						
 						<span style="color:black">Title case</span>
 						<div class="toggle-button">
 							<div class="toggle-option selected" data-toggle="case" id="caseNormal">Default</div>
@@ -115,7 +99,6 @@
 						</div>
 					</h5>
 					<h5>
-						
 						<span style="color:black">Title style</span>
 						<div class="toggle-button">
 							<div class="toggle-option selected" data-toggle="title" id="titleRuled">Ruled</div>
@@ -123,7 +106,6 @@
 						</div>
 					</h5>
 					<h5>
-						
 						<span style="color:black">Title rule position</span>
 						<div class="toggle-button">
 							<div class="toggle-option selected" data-toggle="rule" id="ruleAbove">Above title</div>
@@ -132,7 +114,6 @@
 					</h5>
 					<br>
 					<h5>
-						
 						<span style="color:black">Image</span>
 						<div class="toggle-button">
 							<div class="toggle-option selected" data-toggle="image" id="imageShow">Show</div>
@@ -140,7 +121,6 @@
 						</div>
 					</h5>
 					<h5>
-						
 						<span style="color:black">Roll No</span>
 						<div class="toggle-button">
 							<div class="toggle-option selected" data-toggle="roll" id="rollShow">Show</div>
@@ -148,7 +128,6 @@
 						</div>
 					</h5>
 					<h5>
-						
 						<span style="color:black">Course</span>
 						<div class="toggle-button">
 							<div class="toggle-option selected" data-toggle="course" id="course1">1 line</div>
@@ -156,7 +135,6 @@
 						</div>
 					</h5>
 					<h5>
-						
 						<span style="color:black">Table border</span>
 						<div class="toggle-button">
 							<div class="toggle-option selected" data-toggle="table" id="tableShow">Show</div>
@@ -164,7 +142,6 @@
 						</div>
 					</h5>
 					<h5>
-						
 						<span style="color:black">Education year column</span>
 						<div class="toggle-button">
 							<div class="toggle-option selected" data-toggle="edyear" id="edyearFirst">First</div>
@@ -172,7 +149,6 @@
 						</div>
 					</h5>
 					<h5>
-						
 						<span style="color:black">Experience layout</span>
 						<div class="toggle-button">
 							<div class="toggle-option selected" data-toggle="experience" id="experience1">L1</div>
@@ -180,7 +156,6 @@
 						</div>
 					</h5>
 					<h5>
-						
 						<span style="color:black">Projects layout</span>
 						<div class="toggle-button">
 							<div class="toggle-option selected" data-toggle="projects" id="projects1">L1</div>
@@ -197,23 +172,28 @@
 				<hr>
 
 				<h3 class="text-center">Lists and points</h3>
-				<button class="btn btn-block btn-xs btn-success" onclick="insertList();">+ Insert sub-list</button>
-				<button class="btn btn-block btn-xs btn-warning" onclick="decreaseIndent();">&lt;&lt; Decrese indentation</button>
+				<button class="btn btn-block btn-xs btn-info" onclick="insertList();">+ Insert sub-list</button>
+				<button class="btn btn-block btn-sm btn-warning" onclick="decreaseIndent();">&lt;&lt; Decrese indentation</button>
 				<button class="btn btn-block btn-xs btn-warning" onclick="increaseIndent();">&gt;&gt; Increase indentation</button>
+
+				<hr>
+
 				<h5>
-					
-					<span style="color:black">List Style:</span>
-					<div class="toggle-button">
-						<button class="btn btn-xs custom-button" onclick="changeListStyle('disc');">&#9899;</button>
-						<button class="btn btn-xs custom-button" onclick="changeListStyle('circle');">&#9898;</button>
-						<button class="btn btn-xs custom-button" onclick="changeListStyle('square');">&#9632;</button>
-						<button class="btn btn-xs custom-button" onclick="changeListStyle('dash');">-</button>
-						<button class="btn btn-xs custom-button" onclick="changeListStyle('decimal');">1.</button>
-						<button class="btn btn-xs custom-button" onclick="changeListStyle('upper-roman');">I.</button>
-						<button class="btn btn-xs custom-button" onclick="changeListStyle('lower-roman');">i.</button>
-						<button class="btn btn-xs custom-button" onclick="changeListStyle('upper-alpha');">A.</button>
-						<button class="btn btn-xs custom-button" onclick="changeListStyle('lower-alpha');">a.</button>
+					<div>
+						<span style="color:black">List Style:</span>
+						<div class="toggle-button">
+							<button class="btn btn-xs custom-button" onclick="changeListStyle('disc');">&#9899;</button>
+							<button class="btn btn-xs custom-button" onclick="changeListStyle('circle');">&#9898;</button>
+							<button class="btn btn-xs custom-button" onclick="changeListStyle('square');">&#9632;</button>
+							<button class="btn btn-xs custom-button" onclick="changeListStyle('dash');">-</button>
+							<button class="btn btn-xs custom-button" onclick="changeListStyle('decimal');">1.</button>
+							<button class="btn btn-xs custom-button" onclick="changeListStyle('upper-roman');">I.</button>
+							<button class="btn btn-xs custom-button" onclick="changeListStyle('lower-roman');">i.</button>
+							<button class="btn btn-xs custom-button" onclick="changeListStyle('upper-alpha');">A.</button>
+							<button class="btn btn-xs custom-button" onclick="changeListStyle('lower-alpha');">a.</button>
+						</div>
 					</div>
+					
 				</h5>
 
 			</div>
@@ -235,7 +215,6 @@
 						<h5 id="contentRoll">Roll Number : CB.XX.XX.AAA12345</h5>
 						<h5 id="contentCourse">B.Tech - XXX Engineering</h5>
 						<h5 id="contentBranch">XXX Engineering</h5>
-						<!-- <h5 id="contentMinor">Minor in XXX</h5> -->
 						<h5 id="contentCollege">Amrita Vishwa Vidyapeetham Coimbatore</h5>
 					</div>
 					<div id="contact" style="float:right; display:inline-block;">
@@ -256,9 +235,6 @@
 					<p>An upcoming enthusiastic computer science engineer seeking an entry-level position in a dynamic organization,
 						preferably in software engineering and development, and related fields, resulting in meaningful contribution
 						toward organizational growth along with personal and professional development. </p>
-					<!-- <ul>
-						<li> asddfghhjj </li>
-					</ul> -->
 				</div>
 
 				<div class="section" id="sectionEducation">
@@ -312,7 +288,6 @@
 						<div class="time right">Ongoing</div>
 						</div>
 						<div>
-						<!-- <div class="mentor tab">Project Mentor</div> -->
 						</div>
 						<div>
 						<div class="text"><span style="color:#696969">Objective: </span>To create a webpage where a user/passenger can book flights.</div>
@@ -386,13 +361,7 @@
 							<li>Machine Learning</li>
 							
 						</div>
-						<!-- <div class="col-sm-6">
-							<li>Advanced calculus</li>
-							<li>XYZ architecture *</li>
-							<li>ABC lab *</li>
-						</div> -->
 					</div>
-					<!-- <div class="star"><i>*<span class="light"> To be completed in Nov 2016</span></i></div> -->
 					</ol>
 				</div>
 
@@ -472,7 +441,7 @@
 					<ul>
 					<li>
 						<span class="title">ABC workshop : </span>
-						<span class="text">Attended a 3-day workshop on Image sensing satellute development.</span>
+						<span class="text">Attended a 3-day workshop on Image sensing satellite development.</span>
 					</li>
 					<li>
 						<span class="title">ABC contest 2016 : </span>
@@ -504,11 +473,7 @@
 					</li>
 					<li>
 						<span class="title">Contact Address : </span>
-						<span class="text">D.No: XX, Amrtinagar, Ettimadai, Coimbatore-641112, Tamilnadu</span>
-						<!-- <ul class="decimal">
-							<li>Qualifiers stage : Bagged 20th position among 5000 candidates.</li>
-							<li>National level : Bagged 7th position among 250 candidates.</li>
-						</ul> -->
+						<span class="text">D.No: XX, Amritanagar, Ettimadai, Coimbatore-641112, Tamilnadu</span>
 					</li>
 					</ul>
 					<ul>
@@ -522,7 +487,6 @@
 									<span class="title">Date : </span>
 									<span class="text">Badminton, Gardening</span>
 								</li>
-								<!-- <li>Statistics *</li> -->
 							</div>
 							<div class="col-sm-6">
 								<li>
@@ -543,21 +507,15 @@
 						<h6><strong>(References available on request)</strong></h6>
 					</div>
 				</div>
-
 			</div>
-			
 		</div>
-
-
 	</div>
-
 </div>
 
 
 <div class="modal fade" id="usageModal" tabindex='-1'>
 	<div class="modal-dialog">
 		<div class="modal-content">
-
 			<div class="modal-body">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
 				<h5><strong>Note : </strong>Use <strong>Google Chrome</strong>. Other browsers are unable to print properly and don't support some features.</h5>
@@ -593,7 +551,6 @@
 					<li><a class="blue" target="_blank" href="http://www.pdfmerge.com/">pdfmerge.com/</a> is one of the best sites available for this task.</li>
 				</ul>
 			</div>
-
 		</div>
 	</div>
 </div>
@@ -611,10 +568,6 @@
 				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionAchievements">Achievements, Scholarships, Honors, Contribution, etc.</label></div>
 				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionCurricular">Extracurriculars</label></div>
 				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionExperience">Personal Details</label></div>
-				<!-- <div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionPublications">Publications</label></div> -->
-				
-				
-				
 				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" value="sectionFooterMessage">References message</label></div>
 			</div>
 		</div>
@@ -626,6 +579,7 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
 
 </body>
 
